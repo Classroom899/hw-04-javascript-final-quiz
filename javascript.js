@@ -3,7 +3,7 @@
 // Arrays - Loop through the arrays
 
 function startQuiz() {
-    var questionStart = document.getElementById("startBtn");
+    var questionStart = document.getElementById("startBtn"); //This (should) make the start button the element that makes the first question appear once it's hit
         if (questionStart.style.display === "none") {
           questionStart.style.display = "block";
         } else {
@@ -32,6 +32,9 @@ var startButton = document.getElementById("startBtn")
 // Timer - leave this to the end and add it in because the timer is confusing
 
 // generateQuestion function
+
+function generateQuestion() 
+
 
 
 
