@@ -3,11 +3,11 @@
 // Arrays - Loop through the arrays
 
 function startQuiz() {
-    var x = document.getElementById("startBtn");
-        if (x.style.display === "none") {
-          x.style.display = "block";
+    var questionStart = document.getElementById("startBtn");
+        if (questionStart.style.display === "none") {
+          questionStart.style.display = "block";
         } else {
-          x.style.display = "none";
+          questionStart.style.display = "none";
         }
       }
 
@@ -18,6 +18,9 @@ var questions = [
     ["What is JavaScript?", "A)Programming language with object-oriented capabilities", "B)A food", "C)Move script", "D)Lights"],
 ];
 
+function getElementById(x) {
+    return document.getElementById(x); //I'd like that universal variable for multiple elements 
+}
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
 var pos = 0, quiz,
