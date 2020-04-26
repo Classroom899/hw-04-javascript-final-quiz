@@ -12,74 +12,76 @@
 </head>
 
 <body>
-<div class="quiz-wrapper">
-    <!-- Need a quiz wrapper to wrap things together in one space, otherwise there's nothing to have everything as one
+    <div class="quiz-wrapper">
+        <!-- Need a quiz wrapper to wrap things together in one space, otherwise there's nothing to have everything as one
     First section for the quiz -->
-    <section id="quiz">
-        <div>
-            <p>This is going to be a new quiz. Test your knowledge here. Begin by clicking start. Good luck!</p>
+        <section id="quiz">
+            <div>
+                <p>This is going to be a new quiz. Test your knowledge here. Begin by clicking start. Good luck!</p>
+            </div>
+
+        </section>
+
+
+        <!-- First button to start the quiz // I need this to disappear once the actual quiz starts -->
+        <section>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg" onclick="startQuiz()" id="startBtn">Start</button>
+
+            </div>
+        </section>
+
+        <!-- First Question -->
+        <!-- Add the actual question in to make it easier to see tied along with JavaScript -->
+        <div class="question">
+            What is the file extension for when using JavaScript?
         </div>
 
-    </section>
-
-
-    <!-- First button to start the quiz // I need this to disappear once the actual quiz starts -->
-    <section>
-        <div>
-            <button type="button" class="btn btn-primary btn-lg" onclick="startQuiz()" id="startBtn">Start</button>
+        <!-- Name for first question choices-0 to keep it easier to read with JavaScript since JavaScript starts at 0 for an array -->
+        <div class="choices-0">
+            <ul>
+                <li>.xml</li>
+                <li>.js</li>
+                <li>.javascript</li>
+                <li>.java</li>
+            </ul>
 
         </div>
-    </section>
+        <div class="score">
+            <div class="next">
+                <button type="button" class="next-button">Next</button>
+            </div>
 
-    <!-- First Question -->
-    <!-- Add the actual question in to make it easier to see tied along with JavaScript -->
-    <div class="question">
-        What is the file extension for when using JavaScript?
+        </div>
+
+        <!-- Second Question -->
+
+
+
+
+
+
+
+
+
+
+        <!-- Third Question -->
+
+
+
+
+
+
+
+        <!-- Scoring Section -->
+        <section>
+            <h2>
+                You got:
+            </h2>
+        </section>
+
+
     </div>
-
-    <!-- Name for first question choices-0 to keep it easier to read with JavaScript since JavaScript starts at 0 for an array -->
-    <div class="choices-0">
-        <ul>
-            <li>.xml</li>
-            <li>.js</li>
-            <li>.javascript</li>
-            <li>.java</li>
-        </ul>
-
-    </div>
-
-
-
-
-
-    <!-- Second Question -->
-
-
-
-
-
-
-
-
-
-
-    <!-- Third Question -->
-
-
-
-
-
-
-
-    <!-- Scoring Section -->
-    <section>
-        <h2>
-            You got:
-        </h2>
-    </section>
-
-
-</div>
 
 
     <script src="javascript.js"></script>

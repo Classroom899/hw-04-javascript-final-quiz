@@ -9,7 +9,7 @@
 
 .quiz-wrapper {
     width: 800px;
-    height: 400px;
+    height: 500px;
     background-color: rgb(196, 163, 228);
     margin: 40px auto;
     border-radius: 10px;
@@ -37,11 +37,11 @@
     display: inline-block;
     background-color: wheat;
     width: calc(50% - 30px);
-    float: left;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 20px;
     margin: 10px;
+    float: center;
 
     
 
