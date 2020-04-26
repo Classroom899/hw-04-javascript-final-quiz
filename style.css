@@ -11,5 +11,22 @@
     width: 800px;
     height: 400px;
     background-color: rgb(196, 163, 228);
+    margin: 40px auto;
+    border-radius: 10px;
 
 }
+
+#quiz {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    
+
+
+
+}
+
+
