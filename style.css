@@ -6,3 +6,10 @@
     padding: 20px, 60px, 20px, 60px;
 
 }
+
+.quiz-wrapper {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(196, 163, 228);
+
+}
