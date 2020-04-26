@@ -47,7 +47,7 @@ function generateQuestion() {
 
 // We will need a check answer portion also 
 function checkAnswer() {
-
+ 
 }
 
 
@@ -55,4 +55,5 @@ function checkAnswer() {
 question = questions[pos][0]; //Arrays start at zero so I need question to be equal to questions array at the starting position using zero
 option1 = questions[pos][1]; //Keep to this format and keep going on it -  1 because it goes from 0 to 1
 option2= questions[pos][2]; //Ends with 2 because I only have 3 questions in total
+test.innerHTML
 
