@@ -3,8 +3,14 @@
 // Arrays - Loop through the arrays
 
 function startQuiz() {
-    document.getElementById("startBtn").addEventListener("click", displayFirstQuestion);
-}
+    var x = document.getElementById("startBtn");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
 
 var questions = [
     ["What is the file extension for when using JavaScript?", "A).xml", "B).js", "C).javascript", "D).java"],
@@ -14,7 +20,7 @@ var questions = [
 
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
-var pos = 0, quiz
+var pos = 0, quiz,
 
 // mainFunction
 
