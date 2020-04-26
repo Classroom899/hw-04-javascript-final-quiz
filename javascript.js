@@ -23,7 +23,7 @@ function getElementById(x) {
 }
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
-var pos = 0, quiz, test, correct
+var pos = 0, quiz, test, correct, question, option1, option2
 
 // mainFunction
 
@@ -43,7 +43,16 @@ function generateQuestion() {
 
 
 
-// Use choices.length - So original thought with choice A, B, C, or D then use numbers of positioning for those choices
+// Use choices.length - So, original thought with choice A, B, C, or D then use numbers of positioning for those choices
+
+// We will need a check answer portion also 
+function checkAnswer() {
+
+}
 
 
+// Put my questions into an array to use to go through the questions and I want to add a radio feature
+question = questions[pos][0]; //Arrays start at zero so I need question to be equal to questions array at the starting position using zero
+option1 = questions[pos][1]; //Keep to this format and keep going on it -  1 because it goes from 0 to 1
+option2= questions[pos][2]; //Ends with 2 because I only have 3 questions in total
 
