@@ -23,7 +23,7 @@ function getElementById(x) {
 }
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
-var pos = 0, quiz,
+var pos = 0, quiz, test, correct
 
 // mainFunction
 
@@ -33,7 +33,12 @@ var startButton = document.getElementById("startBtn")
 
 // generateQuestion function
 
-function generateQuestion() 
+function generateQuestion() {
+  var test = getElementById("test");
+  if (pos >= questions.length) {
+    test.innerHTML = "<h2  " + correct + "  of  " + questions.length + "  questions correct<h2>";
+  }
+}
 
 
 
