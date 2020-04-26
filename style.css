@@ -16,17 +16,34 @@
 
 }
 
-#quiz {
+.quiz-wrapper .question {
     width: 200px;
     height: 100px;
     background-color: white;
     margin: 20px auto;
     border-radius: 8px;
     text-align: center;
-    
-    
 
 
+}
+
+.quiz-wrapper .choices-0 ul {
+    list-style: none;
+    padding: 0px;
+}
+
+
+.quiz-wrapper .choices-0 ul li {
+    display: inline-block;
+    background-color: wheat;
+    width: calc(50% - 30px);
+    float: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 10px;
+
+    
 
 }
 
