@@ -3,7 +3,7 @@
 // Arrays - Loop through the arrays
 
 function startQuiz() {
-    
+    document.getElementById("startBtn").addEventListener("click", displayFirstQuestion);
 }
 
 var questions = [
@@ -14,11 +14,11 @@ var questions = [
 
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
-var pos = 0, quiz, 
+var pos = 0, quiz
 
 // mainFunction
 
-var startButton = document.getElementById("start-button")
+var startButton = document.getElementById("startBtn")
 
 // Timer - leave this to the end and add it in because the timer is confusing
 
