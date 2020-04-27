@@ -41,9 +41,33 @@
     border-radius: 20px;
     margin-bottom: 20px;
     margin: 10px;
-    float: center;
+    float:center;
+    box-shadow: 1px 2px 2px 1px grey;
 
-    
+
+}
+
+.quiz-wrapper .score {
+    float:left;
+    width: 100%
+
+
+}
+
+
+.quiz-wrapper .score .next-button {
+    float:left;
+    width: 100%
+
+}
+
+.quiz-wrapper .score .score-card .next-button .score-number{
+    width: 30%;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: violet;
+
+
 
 }
 
