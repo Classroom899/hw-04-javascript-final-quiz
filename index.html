@@ -16,34 +16,27 @@
         <!-- Need a quiz wrapper to wrap things together in one space, otherwise there's nothing to have everything as one
     First section for the quiz -->
         <section id="quiz">
-            <div>
-                <p>This is going to be a new quiz. Test your knowledge here. Begin by clicking start. Good luck!</p>
-            </div>
+            <h1>My quiz!</h1>
 
-        </section>
+            <p>This is going to be a new quiz. Test your knowledge here. Begin by clicking start. Good luck!</p>
+            <button id="startBtn" class="btn btn-primary btn-lg">Start</button>
 
-
-        <!-- First button to start the quiz // I need this to disappear once the actual quiz starts -->
-        <section>
-            <div>
-                <button type="button" class="btn btn-primary btn-lg" onclick="startQuiz()" id="startBtn">Start</button>
-
-            </div>
         </section>
 
         <!-- First Question -->
         <!-- Add the actual question in to make it easier to see tied along with JavaScript along with a question container -->
-        <div class="question" id="questionContainer"> 
-            What is the file extension for when using JavaScript?
+        <div class="question" id="questionContainer">
+            <!-- What is the file extension for when using JavaScript? -->
         </div>
 
         <!-- Name for first question choices-0 to keep it easier to read with JavaScript since JavaScript starts at 0 for an array -->
         <div button class="choices-0">
             <ul>
-                <li id="answer1" type="button" onclick="button(question)" button class="button">.xml</li>
-                <li id="answer2" type="button" onclick="button(question)" class="button">.js</li>
-                <li id="answer3" type="button" onclick="button(question)" class="button">.javascript</li>
-                <li id="answer4" type="button" onclick="button(question)" class="button">.java</li>
+                <li id="answer1" type="button" click="button(question)" class="button">A: Any grouping of characters
+                    surrounded by single or double quotes</li>
+                <li id="answer2" type="button" click="button(question)" class="button">B: A place</li>
+                <li id="answer3" type="button" click="button(question)" class="button">C: An inner HTML element</li>
+                <li id="answer4" type="button" click="button(question)" class="button">D: A new function</li>
             </ul>
 
         </div>
