@@ -7,6 +7,8 @@ var answer2 = document.getElementById("answer2");
 var answer3 = document.getElementById("answer3");
 var answer4 = document.getElementById("answer4");
 
+// Declare the questionIndex here and the current Question
+var questionIndex = -1;
 var quizQuestions = [
    
   { q: 'What is a string?', options: ['A: Any grouping of characters surrounded by single or double quotes', 'B: A place', 'C: An inner HTML', 'D: A new function'], answer: 1 },
