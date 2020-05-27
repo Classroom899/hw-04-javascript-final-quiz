@@ -57,11 +57,11 @@ function startQuiz() {
   //Will need something to grab the first question
 
 
-  questionBox.innerHTML = question.questions[question.index].q;
-  answer1.innerHTML = question.questions[questions.index].options[0];
-  answer2.innerHTML = question.questions[questions.index].options[1];
-  answer3.innerHTML = question.questions[questions.index].options[2];
-  answer4.innerHTML = question.questions[questions.index].options[3];
+  // questionBox.innerHTML = question.questions[question.index].q;
+  // answer1.innerHTML = question.questions[questions.index].options[0];
+  // answer2.innerHTML = question.questions[questions.index].options[1];
+  // answer3.innerHTML = question.questions[questions.index].options[2];
+  // answer4.innerHTML = question.questions[questions.index].options[3];
 
 
 
@@ -103,21 +103,6 @@ const button = document
   .addEventListener('click', buttonClick);
 console.log(button);
 
-function buttonClick(e) {
-  console.log('Button clicked');
-  document.getElementById('header-title').textContent = 'Changed';
-  document.querySelector('#main').style.backgroundColor = '#f4f4f4';
-  console.log(e);
-
-  console.log(e.target);
-  console.log(e.target.id);
-  console.log(e.target.className);
-  console.log(e.target.classList);
-  const output = document.getElementById('output');
-  output.innerHTML = `<h3>${e.target.id}</h3>`;
-
-
-}
 
 
 
