@@ -6,7 +6,7 @@ var answer1 = document.getElementById("answer1");
 var answer2 = document.getElementById("answer2");
 var answer3 = document.getElementById("answer3");
 var answer4 = document.getElementById("answer4");
-var currentQuestion = document.getElementById("")
+var currentQuestion = document.getElementById("");
 
 // Declare the questionIndex here and the current Question
 var questionIndex = -1;
@@ -25,23 +25,26 @@ var cars = ['BMW', 'VW', "Ferrari"];
 
 // Will need the start button here in order to startQuiz
 
-
-
 // Arrays - Loop through the arrays
 
 // Updated the main function to initializaNextQuestion to make this more intuitive
 // Re-named questionStart to currentQuestion and need to make it a global variable
 function initializeNextQuestion() {
   questionIndex++; // Need this to increment the question number
-  var currentQuestion = quizQuestions[questionIndex]; //Make sure to declare this at the top
-  questionTitle.innerText = individualQuestion.question;
-
-  selectionList.innerHTML = ""; //reset choices list
-  for (key in individualQuestion.choices) {
-    var radioBtnName = "question" + i + "_choice";
-    var choiceText = individualQuestion.choices[key];
-    selectionList.appendChild(createLi(radioBtnName, choiceText));
+  currentQuestion = quizQuestions[questionIndex]; //Make sure to declare this at the top
+  if (questionIndex >= 0 && questionIndex < quizQuestions.length) {
+    questionBox.innerHTML = currentQuestion.q;
+    // Reducing the code here with a for loop 
+    for (var i = 0; i < 4; i++) { // Four choices here to pick from
+      const ithAnswerHTMLElement = eval(`answer${i+1}`);
+      // console.log(ithAnswerHTMLElement);
+      ithAnswerHTMLElement.innerHTML = currentQuestion.options[i];
+      // Reset the background color of the answer box so that it can show correct and incorrect color choices for the answers
+      ithAnswerHTMLElement.style.backgroundColor = `#F5DEB3`; // Using inner style here for the color
+    }
   }
+  // questionTitle.innerText = individualQuestion.question; Not really needing this anymore 
+
 }
 
 
@@ -87,7 +90,7 @@ var pos = 0, quiz, test, correct, question, option1, option2, answer,
 
 // mainFunction
 
-var startButton = document.getElementById("startBtn")
+// var startButton = document.getElementById("startBtn")
 
 // Timer - leave this to the end and add it in because the timer is confusing
 
