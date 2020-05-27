@@ -29,7 +29,8 @@ var cars = ['BMW', 'VW', "Ferrari"];
 
 // Arrays - Loop through the arrays
 
-function main() {
+// Updated the main function to initializaNextQuestion to make this more intuitive
+function initializeNextQuestion() {
   var questionStart = quizQuestions[i]; //Make sure to declare this at the top
   questionTitle.innerText = individualQuestion.question;
 
