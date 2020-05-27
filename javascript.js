@@ -6,6 +6,7 @@ var answer1 = document.getElementById("answer1");
 var answer2 = document.getElementById("answer2");
 var answer3 = document.getElementById("answer3");
 var answer4 = document.getElementById("answer4");
+var currentQuestion = document.getElementById("")
 
 // Declare the questionIndex here and the current Question
 var questionIndex = -1;
@@ -17,6 +18,8 @@ var quizQuestions = [
   
 ]
 
+// Initially for this I want it as no question selected first because the questionIndex is set to -1;
+var currentQuestion; // Have to delcare this at the top section
 var person = { first: 'Joe', last: 'Santos', likesMovies: true, age: 22 };
 var cars = ['BMW', 'VW', "Ferrari"];
 
