@@ -30,8 +30,9 @@ var cars = ['BMW', 'VW', "Ferrari"];
 // Arrays - Loop through the arrays
 
 // Updated the main function to initializaNextQuestion to make this more intuitive
+// Re-named questionStart to currentQuestion and need to make it a global variable
 function initializeNextQuestion() {
-  var questionStart = quizQuestions[i]; //Make sure to declare this at the top
+  var currentQuestion = quizQuestions[i]; //Make sure to declare this at the top
   questionTitle.innerText = individualQuestion.question;
 
   selectionList.innerHTML = ""; //reset choices list
