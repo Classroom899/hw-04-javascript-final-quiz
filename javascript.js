@@ -117,18 +117,23 @@ var pos = 0,
 
 // mainFunction
 
-// var startButton = document.getElementById("startBtn")
+var startButton = document.getElementById('startBtn')
 
 // Timer - leave this to the end and add it in because the timer is confusing
 
 // generateQuestion function
 
-document.addEventListener('click', function () {
-  document.getElementById('answer1').innerHTML = ''
-  console.log('answer1')
-})
+// document.addEventListener('click', function () {
+//   document.getElementById('answer1').innerHTML = ''
+//   console.log('answer1')
+// })
 
-const button = document
-  .getElementById('answer1')
-  .addEventListener('click', buttonClick)
-console.log(button)
+const nextButton = document.getElementById('next-button')
+nextButton.addEventListener('click', onNextClicked)
+
+document.getElementById('startBtn').addEventListener('click', startQuiz)
+
+// The class of "answer" I wanted to create makes sure that we don't have to create an event listener manually for every answer
+// From there, we can use a loop to create event listeners
+
+// Need an event target also
