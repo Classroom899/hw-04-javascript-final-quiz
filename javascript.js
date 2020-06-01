@@ -141,7 +141,12 @@ var answerBoxes = document.getElementsByClassName('answer')
 // From there, I can convert it to an array using Array.from(...NodeList Object)
 
 var answerBoxesArray = Array.from(answerBoxes)
-console.log(answerBoxesArray) // console.log is working
+// console.log(answerBoxesArray) // console.log is working
+
+answerBoxesArray.forEach((answer) => {
+  // console.log(answer);
+  answer.addEventListener('click', onAnswerClicked) // Add this in for each answer clicked, this (should) activate the answers being selected
+}) // Need to finish the function first
 
 // Need an event target also
 
