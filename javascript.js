@@ -78,12 +78,13 @@ function onNextClicked() {
 }
 
 function startQuiz() {
-  var questionStart = document.getElementById('startBtn') //This (should) make the start button the element that makes the first question appear once it's hit
-  if (questionStart.style.display === 'none') {
-    questionStart.style.display = 'block'
-  } else {
-    questionStart.style.display = 'none'
-  }
+  // changed questionStart to startButton - Less confusing that way
+  // Function is only going to be hit at the start of the quiz so I've chaged the startButton display
+  var startButton = document.getElementById('startBtn') //This (should) make the start button the element that makes the first question appear once it's hit
+  startButton.style.display = 'none'
+
+  // Enable the next button here
+  nextButton.disabled = false
 
   function generateQuestion() {
     var question = getElementById('question')
