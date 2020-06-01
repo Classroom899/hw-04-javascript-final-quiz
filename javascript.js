@@ -86,17 +86,19 @@ function startQuiz() {
   // Enable the next button here
   nextButton.disabled = false
 
-  function generateQuestion() {
-    var question = getElementById('question')
-    if (pos >= questions.length) {
-      questionContainer.innerHTML =
-        '<h2  ' +
-        correct +
-        '  of  ' +
-        questions.length +
-        '  questions correct<h2>'
-    }
-  }
+  // function generateQuestion() {
+  //   var question = getElementById('question')
+  //   if (pos >= questions.length) {
+  //     questionContainer.innerHTML =
+  //       '<h2  ' +
+  //       correct +
+  //       '  of  ' +
+  //       questions.length +
+  //       '  questions correct<h2>'
+  //   }
+  // }
+
+  initializeNextQuestion()
 }
 
 //I'd like that universal variable for multiple elements
