@@ -137,6 +137,11 @@ document.getElementById('startBtn').addEventListener('click', startQuiz)
 // From there, we can use a loop to create event listeners
 
 var answerBoxes = document.getElementsByClassName('answer')
+// This getElementsByClassName is going to return a NodeList back to me which I want to use
+// From there, I can convert it to an array using Array.from(...NodeList Object)
+
+var answerBoxesArray = Array.from(answerBoxes)
+console.log(answerBoxesArray) // console.log is working
 
 // Need an event target also
 
