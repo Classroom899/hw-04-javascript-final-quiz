@@ -137,3 +137,12 @@ document.getElementById('startBtn').addEventListener('click', startQuiz)
 // From there, we can use a loop to create event listeners
 
 // Need an event target also
+
+
+
+
+
+
+
+// Create a function to update the correct answwers and have that parameter set
+function onAnswerClicked(e)
