@@ -138,11 +138,5 @@ document.getElementById('startBtn').addEventListener('click', startQuiz)
 
 // Need an event target also
 
-
-
-
-
-
-
 // Create a function to update the correct answwers and have that parameter set
-function onAnswerClicked(e)
+function onAnswerClicked(e) {}
