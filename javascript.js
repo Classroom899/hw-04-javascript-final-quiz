@@ -136,6 +136,8 @@ document.getElementById('startBtn').addEventListener('click', startQuiz)
 // The class of "answer" I wanted to create makes sure that we don't have to create an event listener manually for every answer
 // From there, we can use a loop to create event listeners
 
+var answerBoxes = document.getElementsByClassName('answer')
+
 // Need an event target also
 
 // Create a function to update the correct answwers and have that parameter set
