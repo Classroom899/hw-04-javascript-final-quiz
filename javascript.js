@@ -154,4 +154,5 @@ answerBoxesArray.forEach((answer) => {
 function onAnswerClicked(e) {
   // Will need the answer number clicked that from the ID of the HTML element
   const answerID = e.target.id
+  console.log(answerID) // console.log works and it logs answer1, answer2, etc. depending on the answer clicked
 }
