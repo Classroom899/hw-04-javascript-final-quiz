@@ -155,4 +155,14 @@ function onAnswerClicked(e) {
   // Will need the answer number clicked that from the ID of the HTML element
   const answerID = e.target.id
   console.log(answerID) // console.log works and it logs answer1, answer2, etc. depending on the answer clicked
+
+  const answerNumber = answerID[answerID.length - 1] // Array
+  // Using the parseInt to convert a string to a number
+
+  if (currentQuestion.answer === parseInt(answerNumber)) {
+    correct++
+    e.target.style.backgroundColor = 'Lightgreen'
+  } else {
+    e.target.style.backgroundColor = 'Red'
+  }
 }
