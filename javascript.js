@@ -144,11 +144,14 @@ var answerBoxesArray = Array.from(answerBoxes)
 // console.log(answerBoxesArray) // console.log is working
 
 answerBoxesArray.forEach((answer) => {
-  // console.log(answer);
+  // console.log(answer)
   answer.addEventListener('click', onAnswerClicked) // Add this in for each answer clicked, this (should) activate the answers being selected
 }) // Need to finish the function first
 
 // Need an event target also
 
 // Create a function to update the correct answwers and have that parameter set
-function onAnswerClicked(e) {}
+function onAnswerClicked(e) {
+  // Will need the answer number clicked that from the ID of the HTML element
+  const answerID = e.target.id
+}
