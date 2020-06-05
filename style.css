@@ -57,3 +57,8 @@
   font-size: 15px;
   background-color: violet;
 }
+
+.quiz-timer-container {
+  background-color: aqua;
+  border-radius: 5px;
+}
