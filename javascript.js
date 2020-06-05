@@ -2,11 +2,15 @@
 // Need an entire question container element
 var question = document.getElementById('question')
 var questionBox = document.getElementById('questionContainer')
+var answersContainer = document.getElementById('answers-container')
 var answer1 = document.getElementById('answer1')
 var answer2 = document.getElementById('answer2')
 var answer3 = document.getElementById('answer3')
 var answer4 = document.getElementById('answer4')
 var currentQuestion = document.getElementById('')
+
+// I'll have to add a new section with variables for the answersContainer, timer, and correct answers display
+// Spacing automatically fixed by Prettier
 
 // Declare the questionIndex here and the current Question
 var questionIndex = -1
