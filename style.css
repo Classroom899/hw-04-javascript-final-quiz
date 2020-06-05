@@ -1,74 +1,59 @@
 #quiz {
-    background-color: yellow;
-    text-align: center;
-    text-size-adjust: 40px;
-    width: 50%;
-    padding: 20px, 60px, 20px, 60px;
-
+  background-color: yellow;
+  text-align: center;
+  text-size-adjust: 40px;
+  width: 50%;
+  padding: 20px, 60px, 20px, 60px;
 }
 
 .quiz-wrapper {
-    width: 800px;
-    height: 500px;
-    background-color: rgb(196, 163, 228);
-    margin: 40px auto;
-    border-radius: 10px;
-
+  width: 800px;
+  height: 500px;
+  background-color: rgb(196, 163, 228);
+  margin: 40px auto;
+  border-radius: 10px;
 }
 
 .quiz-wrapper .question {
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 8px;
-    text-align: center;
-
-
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .quiz-wrapper .choices-0 ul {
-    list-style: none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
 
-
 .quiz-wrapper .choices-0 ul li {
-    display: inline-block;
-    background-color: wheat;
-    width: calc(50% - 30px);
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    margin: 10px;
-    float:center;
-    box-shadow: 1px 2px 2px 1px grey;
-
-
+  display: inline-block;
+  background-color: wheat;
+  width: calc(50% - 30px);
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin: 10px;
+  float: center;
+  box-shadow: 1px 2px 2px 1px grey;
 }
 
 .quiz-wrapper .score {
-    float:left;
-    width: 100%
-
-
+  float: left;
+  width: 100%;
 }
-
 
 .quiz-wrapper .score .next-button {
-    float:left;
-    width: 100%
-
+  float: left;
+  width: 100%;
+  margin-top: 7%;
 }
 
-.quiz-wrapper .score .score-card .next-button .score-number{
-    width: 30%;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: violet;
-
-
-
+.quiz-wrapper .score .score-card .next-button .score-number {
+  width: 30%;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: violet;
 }
-
-
