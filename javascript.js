@@ -9,6 +9,7 @@ var answer3 = document.getElementById('answer3')
 var answer4 = document.getElementById('answer4')
 var currentQuestion = document.getElementById('')
 var correctAnswers = document.getElementById('score-number')
+var quizTimerDisplay = document.getElementById('quiz-timer') // Display for the quiz timer
 
 // I'll have to add a new section with variables for the answersContainer, timer, and correct answers display
 // Spacing automatically fixed by Prettier
