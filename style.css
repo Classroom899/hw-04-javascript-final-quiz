@@ -61,4 +61,8 @@
 .quiz-timer-container {
   background-color: aqua;
   border-radius: 5px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
