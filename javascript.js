@@ -107,6 +107,7 @@ function updateTimerDisplay() {
 }
 
 function startQuiz() {
+  startTimer() // Start the timer once the user starts the quiz (should work)
   // changed questionStart to startButton - Less confusing that way
   // Function is only going to be hit at the start of the quiz so I've chaged the startButton display
   var startButton = document.getElementById('startBtn') //This (should) make the start button the element that makes the first question appear once it's hit
