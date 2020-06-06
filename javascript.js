@@ -156,15 +156,6 @@ var pos = 0,
 
 var startButton = document.getElementById('startBtn')
 
-// Timer - leave this to the end and add it in because the timer is confusing
-
-// generateQuestion function
-
-// document.addEventListener('click', function () {
-//   document.getElementById('answer1').innerHTML = ''
-//   console.log('answer1')
-// })
-
 const nextButton = document.getElementById('next-button')
 nextButton.addEventListener('click', onNextClicked)
 
@@ -198,6 +189,7 @@ function onAnswerClicked(e) {
 
   if (currentQuestion.answer === parseInt(answerNumber)) {
     correct++
+    correctAnswers.innerHTML = correct // First add this into my function for starting the endQuiz portion - Make sure on the answers clicked that the quiz knows what is correct and what is not 100%
     e.target.style.backgroundColor = 'Lightgreen'
   } else {
     e.target.style.backgroundColor = 'Red'
