@@ -131,6 +131,13 @@ function startQuiz() {
   initializeNextQuestion()
 }
 
+// Add a stop to the timer once the quiz ends
+function endQuiz() {
+  clearInterval(quizTimer)
+}
+
+// Other elements to this I would like to add include displaying the victory screen and hiding other selected answers
+
 //I'd like that universal variable for multiple elements
 // I'll also have to add in a pos - This tells us where the user taking the quiz is within the quiz(basically a spot to have in there and tell the program)
 // Javascript starts at 0
