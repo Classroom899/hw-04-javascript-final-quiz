@@ -89,13 +89,14 @@ function onNextClicked() {
 
 // Add the timer function
 function startTimer() {
+  timeCount = maxTimeForQuiz // Reset the timer to the maximum amount of time given for the quiz
   quizTimer = setInterval(() => {
     if (timeCount === 0) {
       clearInterval(quizTimer) // Stop timer
     } else {
       timeCount--
       // Update the display for the user taking the quiz
-      updateTimerdisplay()
+      updateTimerDisplay()
     }
   }, 1000)
 } // Use setInterval for this and make sure to have my if else statement within it
