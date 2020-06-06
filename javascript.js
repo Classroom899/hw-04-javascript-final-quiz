@@ -8,11 +8,14 @@ var answer2 = document.getElementById('answer2')
 var answer3 = document.getElementById('answer3')
 var answer4 = document.getElementById('answer4')
 var currentQuestion = document.getElementById('')
-var correctAnswers = document.getElementById('score-number')
+var correctAnswers = document.getElementById('score-number') // Wrapper I need for the four answers
 var quizTimerDisplay = document.getElementById('quiz-timer') // Display for the quiz timer
 
 // I'll have to add a new section with variables for the answersContainer, timer, and correct answers display
 // Spacing automatically fixed by Prettier
+
+var timeCounter = 0 // Need this variable to have/display the current timer amount
+var quizTimer // This variable is going to be used for the actual timer function that I'll need to make
 
 // Declare the questionIndex here and the current Question
 var questionIndex = -1
