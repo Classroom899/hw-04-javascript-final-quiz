@@ -87,6 +87,9 @@ function onNextClicked() {
   initializeNextQuestion()
 }
 
+// Add the timer function
+function startTimer() {}
+
 function startQuiz() {
   // changed questionStart to startButton - Less confusing that way
   // Function is only going to be hit at the start of the quiz so I've chaged the startButton display

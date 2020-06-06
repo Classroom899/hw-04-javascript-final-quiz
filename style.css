@@ -40,7 +40,7 @@
   box-shadow: 1px 2px 2px 1px grey;
 }
 
-.quiz-wrapper .score {
+.quiz-wrapper .score .score-card {
   float: left;
   width: 100%;
 }
