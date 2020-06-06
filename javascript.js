@@ -88,7 +88,17 @@ function onNextClicked() {
 }
 
 // Add the timer function
-function startTimer() {}
+function startTimer() {
+  quizTimer = setInterval(() => {
+    if (timeCount === 0) {
+      clearInterval(quizTimer) // Stop timer
+    } else {
+      timeCount--
+      // Update the display for the user taking the quiz
+      updateTimerdisplay()
+    }
+  }, 1000)
+} // Use setInterval for this and make sure to have my if else statement within it
 
 function startQuiz() {
   // changed questionStart to startButton - Less confusing that way
