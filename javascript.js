@@ -101,6 +101,11 @@ function startTimer() {
   }, 1000)
 } // Use setInterval for this and make sure to have my if else statement within it
 
+// Will also need a method to update the time display when the time changes due to counting or when the user chooses a wrong answer
+function updateTimerDisplay() {
+  quizTimerDisplay.innerHTML = timeCount
+}
+
 function startQuiz() {
   // changed questionStart to startButton - Less confusing that way
   // Function is only going to be hit at the start of the quiz so I've chaged the startButton display
