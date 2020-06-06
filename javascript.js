@@ -16,6 +16,7 @@ var quizTimerDisplay = document.getElementById('quiz-timer') // Display for the 
 
 var timeCounter = 0 // Need this variable to have/display the current timer amount
 var quizTimer // This variable is going to be used for the actual timer function that I'll need to make
+const maxTimeForQuiz = 60 // Going to set this as the max time to complete my quiz since it's only three questions so far and it's going to be a constant thing for time - 60 seconds
 
 // Declare the questionIndex here and the current Question
 var questionIndex = -1
