@@ -65,6 +65,7 @@ var cars = ['BMW', 'VW', 'Ferrari']
 // Updated the main function to initializaNextQuestion to make this more intuitive
 // Re-named questionStart to currentQuestion and need to make it a global variable
 function initializeNextQuestion() {
+  answersContainer.style.pointerEvents = 'all' // Let all the answers be clickable - This will make the onAnswerClicked function work correctly
   questionIndex++ // Need this to increment the question number
   currentQuestion = quizQuestions[questionIndex] //Make sure to declare this at the top
   if (questionIndex >= 0 && questionIndex < quizQuestions.length) {
