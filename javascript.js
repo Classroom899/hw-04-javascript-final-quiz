@@ -180,6 +180,9 @@ function onAnswerClicked(e) {
     correct++
     correctAnswers.innerHTML = correct // First add this into my function for starting the endQuiz portion - Make sure on the answers clicked that the quiz knows what is correct and what is not 100%
     e.target.style.backgroundColor = 'Lightgreen'
+    if (questionIndex === quizQuestions.length - 1) {
+      endQuiz() // Quiz ends if this is the last question
+    }
   } else {
     e.target.style.backgroundColor = 'Red'
   }
