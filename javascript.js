@@ -192,5 +192,6 @@ function onAnswerClicked(e) {
       timeCount = 0 // Else if the timeCount is equal to zero then call this endQuiz function and end the quiz
       endQuiz() // Time is up but I also want to update the timer display
     }
+    updateTimerDisplay() // Call the update timer display function here within the else statement
   }
 }
