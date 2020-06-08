@@ -186,5 +186,11 @@ function onAnswerClicked(e) {
   } else {
     e.target.style.backgroundColor = 'Red'
     // Add in the decrease timer counter
+    if (timeCount >= 10) {
+      timeCount -= 10
+    } else {
+      timeCount = 0 // Else if the timeCount is equal to zero then call this endQuiz function and end the quiz
+      endQuiz() // Time is up but I also want to update the timer display
+    }
   }
 }
