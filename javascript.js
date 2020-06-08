@@ -185,5 +185,6 @@ function onAnswerClicked(e) {
     }
   } else {
     e.target.style.backgroundColor = 'Red'
+    // Add in the decrease timer counter
   }
 }
