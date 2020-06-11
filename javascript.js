@@ -135,7 +135,7 @@ function endQuiz() {
 var pos = 0,
   quiz,
   test,
-  correct,
+  correct = 0,
   question,
   option1,
   option2,
@@ -171,13 +171,14 @@ answerBoxesArray.forEach((answer) => {
 function onAnswerClicked(e) {
   // Will need the answer number clicked that from the ID of the HTML element
   const answerID = e.target.id
-  console.log(answerID) // console.log works and it logs answer1, answer2, etc. depending on the answer clicked
 
   const answerNumber = answerID[answerID.length - 1] // Array
   // Using the parseInt to convert a string to a number
 
   if (currentQuestion.answer === parseInt(answerNumber)) {
     correct++
+    console.log(correct)
+
     correctAnswers.innerHTML = correct // First add this into my function for starting the endQuiz portion - Make sure on the answers clicked that the quiz knows what is correct and what is not 100%
     e.target.style.backgroundColor = 'Lightgreen'
     if (questionIndex === quizQuestions.length - 1) {
